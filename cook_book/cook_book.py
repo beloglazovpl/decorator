@@ -23,7 +23,7 @@ def get_cook_book(file_name):
 def get_shop_list_by_dishes(dishes, person):
     shop_list = dict()
     for dish in dishes:
-        for key, value in get_cook_book('recipes.txt').items():
+        for key, value in get_cook_book('/Users/beloglazovpl/Desktop/Projects/decorators/cook_book/recipes.txt').items():
             if key == dish:
                 for item in value:
                     ingredient_name, quantity, measure = item.values()
